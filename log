@@ -36,3 +36,8 @@ Fri 23 Sep 2022 12:08:33 PM UTC:
  tests:  4|7
 total_score: 5/70
 2d49f77
+Fri 23 Sep 2022 12:17:34 PM UTC: 
+ treemap.c | 18 +++++++++++-------
+ 1 file changed, 11 insertions(+), 7 deletions(-)
+ tests:  0|0
+2701eb6
