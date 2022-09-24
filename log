@@ -205,3 +205,14 @@ treemap.c:50:12: error: unused variable ‘new’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 2cd85fe
+Sat 24 Sep 2022 07:24:49 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:50:13: error: unused variable ‘new’ [-Werror=unused-variable]
+   50 |   TreeNode* new = createTreeNode(key, value);
+      |             ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+75b966f
