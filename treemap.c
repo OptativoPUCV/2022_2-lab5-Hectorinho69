@@ -91,8 +91,10 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
       }
     }
   }
-    
-  return NULL;
+  if((aux) && (aux->pair->key == key)) 
+    return aux->pair;
+  else
+    return NULL;
 }
 
 
