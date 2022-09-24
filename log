@@ -136,3 +136,18 @@ treemap.c:97:3: error: ‘else’ without a previous ‘if’
 cc1: all warnings being treated as errors
 Compilation failed
 3bd47bb
+Sat 24 Sep 2022 03:40:03 PM UTC: 
+ treemap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:97:12: error: ‘current’ undeclared (first use in this function)
+   97 |     return current->pair;
+      |            ^~~~~~~
+treemap.c:97:12: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:101:1: error: control reaches end of non-void function [-Werror=return-type]
+  101 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+bf083aa
