@@ -93,7 +93,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
     }
   }
     
-  if aux->pair->key != key
+  if (aux->pair->key != key)
     return NULL;
   return aux->pair;
 }
