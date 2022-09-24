@@ -4,6 +4,7 @@
 #include "treemap.h"
 
 typedef struct TreeNode TreeNode;
+typedef struct Pair Pair;
 
 
 struct TreeNode {
