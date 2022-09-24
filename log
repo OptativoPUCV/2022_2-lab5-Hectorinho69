@@ -274,3 +274,37 @@ treemap.c:50:13: error: unused variable ‘new’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 68f3b61
+Sat 24 Sep 2022 10:58:08 PM UTC: 
+ treemap.c | 29 ++++++++++-------------------
+ 1 file changed, 10 insertions(+), 19 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘createTreeNode’:
+treemap.c:32:5: error: ‘new’ undeclared (first use in this function)
+   32 |     new->pair = (Pair *)malloc(sizeof(Pair));
+      |     ^~~
+treemap.c:32:5: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c: In function ‘createTreeMap’:
+treemap.c:45:12: error: ‘new’ undeclared (first use in this function)
+   45 |     return new;
+      |            ^~~
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:53:13: error: unused variable ‘newnode’ [-Werror=unused-variable]
+   53 |   TreeNode* newnode = createTreeNode(key, value);
+      |             ^~~~~~~
+treemap.c:52:13: error: unused variable ‘parent’ [-Werror=unused-variable]
+   52 |   TreeNode* parent = NULL;
+      |             ^~~~~~
+treemap.c:51:13: error: unused variable ‘aux’ [-Werror=unused-variable]
+   51 |   TreeNode* aux = tree->root;
+      |             ^~~
+treemap.c: In function ‘createTreeNode’:
+treemap.c:37:1: error: control reaches end of non-void function [-Werror=return-type]
+   37 | }
+      | ^
+treemap.c: In function ‘createTreeMap’:
+treemap.c:46:1: error: control reaches end of non-void function [-Werror=return-type]
+   46 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+ce6ed3f
