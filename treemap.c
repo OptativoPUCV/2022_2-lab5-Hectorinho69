@@ -203,7 +203,7 @@ Pair * nextTreeMap(TreeMap * tree)
    if (tree->current->right)
    {
      tree->current = minimum(tree->current->right);
-     return tree->current->value;
+     return tree->current->pair->value;
    }
   
   TreeNode* aux = tree->current->parent;
@@ -217,7 +217,7 @@ Pair * nextTreeMap(TreeMap * tree)
   if (aux)
   {
     tree->current = aux;
-    return (aux->value);
+    return (aux->pair->value);
   }
   return NULL;
 }
