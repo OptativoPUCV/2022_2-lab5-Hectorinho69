@@ -4,7 +4,6 @@
 #include "treemap.h"
 
 typedef struct TreeNode TreeNode;
-typedef struct Pair Pair;
 
 
 struct TreeNode {
@@ -93,7 +92,10 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
       else return NULL;
     }
   }
-    return aux->pair;
+    
+  if aux->pair->key != key
+    return NULL;
+  return aux->pair;
 }
 
 

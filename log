@@ -65,3 +65,18 @@ Sat 24 Sep 2022 03:05:58 PM UTC:
  tests:  4|7
 total_score: 5/70
 bbcb319
+Sat 24 Sep 2022 03:08:22 PM UTC: 
+ treemap.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:96:6: error: expected ‘(’ before ‘aux’
+   96 |   if aux->pair->key != key
+      |      ^~~
+      |      (
+treemap.c:96:15: error: statement with no effect [-Werror=unused-value]
+   96 |   if aux->pair->key != key
+      |      ~~~~~~~~~^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5c62578
