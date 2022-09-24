@@ -308,3 +308,20 @@ treemap.c:46:1: error: control reaches end of non-void function [-Werror=return-
 cc1: all warnings being treated as errors
 Compilation failed
 ce6ed3f
+Sat 24 Sep 2022 10:58:47 PM UTC: 
+ treemap.c | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:53:13: error: unused variable ‘new’ [-Werror=unused-variable]
+   53 |   TreeNode* new = createTreeNode(key, value);
+      |             ^~~
+treemap.c:52:13: error: unused variable ‘parent’ [-Werror=unused-variable]
+   52 |   TreeNode* parent = NULL;
+      |             ^~~~~~
+treemap.c:51:13: error: unused variable ‘aux’ [-Werror=unused-variable]
+   51 |   TreeNode* aux = tree->root;
+      |             ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+76d860d
