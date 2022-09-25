@@ -204,7 +204,7 @@ Pair * nextTreeMap(TreeMap * tree)
    if (tree->current->right)
    {
      tree->current = minimum(tree->current->right);
-     return tree->current->pair->value;
+     return tree->current->pair;
    }
   
   TreeNode* aux = tree->current->parent;
