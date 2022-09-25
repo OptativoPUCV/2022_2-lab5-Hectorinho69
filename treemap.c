@@ -195,7 +195,7 @@ Pair * upperBound(TreeMap * tree, void* key)
   while (tree->current)
   {
     if (is_equal(tree, tree->current->pair->key, key) == 1)
-      return tree->current->pair->value;
+      return tree->current->pair;
     else if (tree->lower_than(tree->current->pair->key, key) ==1)
     {
       tree->current = tree->current->right;
