@@ -498,3 +498,9 @@ Sun 25 Sep 2022 05:58:53 PM UTC:
  tests:  25|1
 total_score: 60/70
 37a61ab
+Sun 25 Sep 2022 08:06:43 PM UTC: 
+ treemap.c | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+ tests:  25|1
+total_score: 60/70
+a40dbe2
